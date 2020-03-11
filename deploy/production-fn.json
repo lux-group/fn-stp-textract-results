@@ -1,0 +1,27 @@
+{
+  "FunctionName": "fn-stp-textract-results-production",
+  "Runtime": "nodejs12.x",
+  "Role": "arn:aws:iam::801230920622:role/le-prod-stp-execution",
+  "Handler": "index.handler",
+  "Description": "STP Process Inbox Production",
+  "Timeout": 5,
+  "MemorySize": 128,
+  "VpcConfig": {
+    "SubnetIds": [
+    ],
+    "SecurityGroupIds": [
+    ]
+  },
+  "Environment": {
+    "Variables": {
+      "DATA_S3_BUCKET_NAME": "le-prod-stp-email-data",
+      "NODE_ENV": "production",
+      "APP_NAME": "prod-fn-stp-textract-results",
+      "WHITELIST_ORIGINATORS": ""
+    }
+  },
+  "KMSKeyArn": "",
+  "Tags": {
+    "KeyName": ""
+  }
+}

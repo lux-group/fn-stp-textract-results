@@ -1,0 +1,29 @@
+{
+  "FunctionName": "fn-stp-textract-results-test",
+  "Runtime": "nodejs12.x",
+  "Role": "arn:aws:iam::801230920622:role/le-test-stp-execution",
+  "Handler": "index.handler",
+  "Description": "STP Process Inbox Test",
+  "Timeout": 5,
+  "MemorySize": 128,
+  "VpcConfig": {
+    "SubnetIds": [
+    ],
+    "SecurityGroupIds": [
+    ]
+  },
+  "Environment": {
+    "Variables": {
+      "DATA_S3_BUCKET_NAME": "le-test-stp-email-data",
+      "NODE_ENV": "production",
+      "APP_NAME": "test-fn-stp-textract-results",
+      "WHITELIST_ORIGINATORS": "luxuryescapes.com",
+      "SNS_CHANNEL": "arn:aws:sns:ap-southeast-2:801230920622:test-le-textract",
+      "SNS_ROLE_ARN": "arn:aws:iam::801230920622:role/le-textract-service-role"
+    }
+  },
+  "KMSKeyArn": "",
+  "Tags": {
+    "KeyName": ""
+  }
+}
