@@ -17,8 +17,7 @@
       "DATA_S3_BUCKET_NAME": "le-prod-stp-email-data",
       "RESULTS_S3_BUCKET_NAME": "le-prod-stp-textract-results",
       "NODE_ENV": "production",
-      "APP_NAME": "prod-fn-stp-textract-results",
-      "WHITELIST_ORIGINATORS": ""
+      "APP_NAME": "prod-fn-stp-textract-results"
     }
   },
   "KMSKeyArn": "",

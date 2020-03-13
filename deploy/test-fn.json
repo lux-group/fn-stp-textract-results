@@ -17,8 +17,7 @@
       "DATA_S3_BUCKET_NAME": "le-test-stp-email-data",
       "RESULTS_S3_BUCKET_NAME": "le-test-stp-textract-results",
       "NODE_ENV": "production",
-      "APP_NAME": "test-fn-stp-textract-results",
-      "WHITELIST_ORIGINATORS": "luxuryescapes.com"
+      "APP_NAME": "test-fn-stp-textract-results"
     }
   },
   "KMSKeyArn": "",
