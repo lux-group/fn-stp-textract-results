@@ -1,5 +1,5 @@
 {
-  "name": "fn-apps-flyer",
+  "name": "fn-stp-textract-results",
   "version": "1.0.0",
   "description": "Process email meta data (from S3 bucket). Extract blocks and key value pairs using AWS Textract.",
   "main": "index.js",
